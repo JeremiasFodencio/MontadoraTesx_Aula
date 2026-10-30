@@ -1,0 +1,13 @@
+{
+  "name": "montadora-tesx",
+  "version": "1.0.0",
+  "description": "Sistema integrado da Montadora Tesx (projeto academico)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

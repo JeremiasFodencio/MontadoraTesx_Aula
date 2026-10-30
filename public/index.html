@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montadora Tesx</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="login-screen" class="screen">
+    <div class="login-box">
+      <h1>Montadora Tesx</h1>
+      <p class="slogan">"Feito para Funcionar em todos os cenarios possiveis, na rua da esquerda ou na rua da direita"</p>
+      <form id="login-form">
+        <input type="email" id="login-email" placeholder="E-mail" value="admin@tesx.com" required>
+        <input type="password" id="login-senha" placeholder="Senha" value="admin123" required>
+        <button type="submit">Entrar</button>
+        <p id="login-erro"></p>
+      </form>
+      <details class="credenciais">
+        <summary>Contas de demonstracao</summary>
+        <ul>
+          <li>admin@tesx.com / admin123 (acesso total)</li>
+          <li>estoque@tesx.com / estoque123</li>
+          <li>producao@tesx.com / producao123</li>
+          <li>qualidade@tesx.com / qualidade123</li>
+          <li>vendas@tesx.com / vendas123</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+
+  <div id="app-screen" class="screen hidden">
+    <header>
+      <div class="brand">Montadora Tesx</div>
+      <div class="header-right">
+        <span id="user-info"></span>
+        <button id="logout-btn">Sair</button>
+      </div>
+    </header>
+    <nav id="tabs"></nav>
+    <main id="content"></main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
